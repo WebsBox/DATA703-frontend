@@ -3,6 +3,7 @@ import { ref, reactive, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { productApi, imageApi } from '../api'
+import { getImageUrl } from '../api/request'
 
 const route = useRoute()
 const router = useRouter()
@@ -25,7 +26,7 @@ const form = reactive({
 })
 
 const imagePreview = computed(() =>
-  form.image_id ? `/api/images/${form.image_id}` : ''
+  form.image_id ? getImageUrl(`/api/images/${form.image_id}`) : ''
 )
 
 /* ---------- Image upload ---------- */
