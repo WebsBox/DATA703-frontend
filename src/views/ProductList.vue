@@ -2,6 +2,7 @@
 import { ref, reactive, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { productApi } from '../api'
+import { getImageUrl } from '../api/request'
 
 const router = useRouter()
 const loading = ref(false)
@@ -113,7 +114,7 @@ watch(() => perPage.value, () => {
         @click="router.push(`/products/${p.id}`)"
       >
         <div class="product-image">
-          <img v-if="p.image_url" :src="p.image_url" :alt="p.name" />
+          <img v-if="p.image_url" :src="getImageUrl(p.image_url)" :alt="p.name" />
           <div v-else class="placeholder">
             <el-icon :size="40"><Goods /></el-icon>
           </div>
