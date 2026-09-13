@@ -1,0 +1,63 @@
+/* ---- Element Plus theme override: primary → #4B9CD3 ---- */
+:root {
+  --el-color-primary: #4b9cd3;
+  --el-color-primary-light-1: #5ba6d7;
+  --el-color-primary-light-2: #6bb0db;
+  --el-color-primary-light-3: #7bbae0;
+  --el-color-primary-light-4: #8cc4e4;
+  --el-color-primary-light-5: #9ccfe8;
+  --el-color-primary-light-6: #add9ec;
+  --el-color-primary-light-7: #bde3f0;
+  --el-color-primary-light-8: #ceedf4;
+  --el-color-primary-light-9: #def6f8;
+  --el-color-primary-dark-2: #3d8bbf;
+  --el-color-primary-rgb: 75, 156, 211;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #303133;
+}
+
+a {
+  color: #4b9cd3;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mb-16 { margin-bottom: 16px; }
