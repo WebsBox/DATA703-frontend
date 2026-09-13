@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus'
 import { useAuthStore } from '../stores/auth'
 
 const request = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://2hand.houzhaohan.vip/api',
   timeout: 15000,
 })
 
