@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     host: '0.0.0.0',
-    port: 5173,
+    port: 3032,
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:3031',
+        target: 'https://2hand.houzhaohan.vip',
         changeOrigin: true,
       },
     },
