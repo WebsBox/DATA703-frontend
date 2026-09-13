@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { productApi } from '../api'
 import { useAuthStore } from '../stores/auth'
+import { getImageUrl } from '../api/request'
 
 const route = useRoute()
 const router = useRouter()
@@ -73,7 +74,7 @@ onMounted(loadProduct)
       <!-- Left: product image -->
       <div class="detail-image card">
         <template v-if="product.image_url">
-          <img :src="product.image_url" :alt="product.name" />
+          <img :src="getImageUrl(product.image_url)" :alt="product.name" />
         </template>
         <template v-else>
           <div class="placeholder">
