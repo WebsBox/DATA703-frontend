@@ -111,7 +111,6 @@ onMounted(() => { loadStats(); loadUsers(); loadAdminProducts() })
         </div>
 
         <el-table v-loading="userLoading" :data="users" stripe style="width: 100%; margin-top: 16px">
-          <el-table-column prop="id" label="ID" width="70" />
           <el-table-column prop="username" label="Username" width="160" />
           <el-table-column prop="email" label="Email" min-width="220" />
           <el-table-column label="Role" width="120">
@@ -153,7 +152,6 @@ onMounted(() => { loadStats(); loadUsers(); loadAdminProducts() })
         </div>
 
         <el-table v-loading="productLoading" :data="adminProducts" stripe style="width: 100%; margin-top: 16px">
-          <el-table-column prop="id" label="ID" width="70" />
           <el-table-column prop="name" label="Product name" min-width="180" />
           <el-table-column prop="category" label="Category" width="120">
             <template #default="{ row }">{{ row.category || '-' }}</template>
