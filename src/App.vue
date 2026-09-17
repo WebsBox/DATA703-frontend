@@ -187,7 +187,7 @@ export default { components: { ArrowDown, Lock, SwitchButton, QuestionFilled } }
 }
 .header-left { display: flex; align-items: center; gap: 28px; }
 .logo {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 26px;
   font-size: 18px; font-weight: 600; color: #303133;
   text-decoration: none !important;
 }
