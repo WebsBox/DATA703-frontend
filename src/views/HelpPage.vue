@@ -141,7 +141,7 @@ const teamMembers = [
   },
   {
     name: 'Jiaxin Wang',
-    role: 'Frontend Developer',
+    role: 'Data Scientist',
     bio: 'Requirement analysis, data processing and analytics, testing, documentation, and the visualization component of the system.',
     color: '#67c23a',
     email: 'jwang3@unc.edu',
