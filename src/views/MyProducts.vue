@@ -64,7 +64,6 @@ onMounted(() => { loadCategories(); loadProducts() })
       </div>
 
       <el-table v-loading="loading" :data="products" stripe style="width: 100%">
-        <el-table-column prop="id" label="ID" width="70" />
         <el-table-column label="Product info" min-width="260">
           <template #default="{ row }">
             <div>
