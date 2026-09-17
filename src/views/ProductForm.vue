@@ -149,9 +149,9 @@ onMounted(() => {
           name: [{ required: true, message: 'Please enter a product name', trigger: 'blur' }, { min: 2, message: 'At least 2 characters', trigger: 'blur' }],
           price: [{ required: true, message: 'Please enter a price', trigger: 'blur' }],
         }"
-        label-width="100px"
+        label-width="140px"
         label-position="right"
-        style="max-width: 640px"
+        style="max-width: 720px"
       >
         <el-form-item label="Product name" prop="name">
           <el-input v-model="form.name" placeholder="Enter product name" />
@@ -252,5 +252,5 @@ export default { components: { Plus, Delete, ZoomIn } }
 .preview-icon { font-size: 22px; cursor: pointer; }
 .preview-icon:hover { color: #f56c6c; }
 
-.upload-tip { font-size: 12px; color: #909399; margin-top: 6px; }
+.upload-tip { font-size: 12px; color: #909399; margin-top: 8px; padding: 0 12px; }
 </style>
